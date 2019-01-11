@@ -1,0 +1,201 @@
+/* using FlexBox to display data in-line and not as block elements */
+
+a {
+  line-height: 0px;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* a:visited {
+  color: #609;
+} */
+
+body {
+  margin: 0px;
+  font-size: 13px;
+  color: #000;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  /* background:  yellow; */
+  align-items: center;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  height: 45px;
+  padding-top: 10px;
+}
+
+/* PROFILE IMAGE */
+
+.item-profile-wrapper {
+  padding-right: 29px;
+  padding-left: 14px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+
+/* ALERT BELL STARTS HERE */
+
+.bell-wrapper {
+  background: fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4px;
+}
+
+.alert-bell {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-bell {
+  color: white;
+  font-size: 9px;
+  text-decoration: none;
+}
+
+.alert-bell:hover {
+  background: #000;
+}
+
+/* ALERT BELL ENDS HERE */
+
+/* APP GRID DISPLAY STARTS HERE */
+.app-displayer {
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding-right: 20px;
+  padding-left: 15px;
+  padding-bottom: 2px;
+}
+
+.app-displayer:hover .flex-container > div {
+  background: #000;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2px;
+}
+
+.flex-container > div {
+  background-color: grey;
+  width: 4px;
+  height: 4px;
+  margin-right: 2px;
+  box-sizing: border-box;
+}
+
+/* IMAGES LINK */
+
+.item-images {
+  padding-right: 7px;
+  padding-left: 15px;
+  padding-bottom: 4px;
+}
+
+/* GMAIL LINK */
+
+.item-gmail {
+  padding-bottom: 4px;
+}
+
+/* MIDDLE SECTION STARTS HERE */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 143px;
+}
+
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  width: 584px;
+  height: 44px;
+  margin-top: 24px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  margin-left: 12px;
+  padding: 5px 8px 0 16px;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  display: flex;
+  border: none;
+  color: rgba(0, 0, 0, 0.87);
+  outline: none;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  height: 34px;
+  width: 520px;
+}
+
+.mic-container {
+  height: 24px;
+  width: 24px;
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 5px 8px;
+}
+
+.mic-container img {
+  width: 24px;
+  height: 24px;
+}
+
+/* SEARCH BUTTONS */
+
+.search-button-container {
+  width: 571px;
+  height: 76px;
+  padding-top: 18px;
+  padding-right: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-button {
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 11px 4px;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.search-button-google {
+}

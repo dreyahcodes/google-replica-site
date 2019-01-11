@@ -1,0 +1,249 @@
+/* using FlexBox to display data in-line and not as block elements */
+
+a {
+  line-height: 0px;
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0px;
+  font-size: 13px;
+  color: #000;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  height: 45px;
+  padding-top: 10px;
+}
+
+/* Profile Image */
+
+.item-profile-wrapper {
+  padding-right: 29px;
+  padding-left: 14px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+
+/* Alert Bell */
+
+.bell-wrapper {
+  background: fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4px;
+}
+
+.alert-bell {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-bell {
+  color: white;
+  font-size: 9px;
+  text-decoration: none;
+}
+
+.alert-bell:hover {
+  background: #000;
+}
+
+/* App Grid Display */
+
+.app-displayer {
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding-right: 20px;
+  padding-left: 15px;
+  padding-bottom: 2px;
+}
+
+.app-displayer:hover .flex-container > div {
+  background: #000;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2px;
+}
+
+.flex-container > div {
+  background-color: grey;
+  width: 4px;
+  height: 4px;
+  margin-right: 2px;
+  box-sizing: border-box;
+}
+
+/* Images Link */
+
+.item-images {
+  padding-right: 7px;
+  padding-left: 15px;
+  padding-bottom: 4px;
+}
+
+/* Gmail Link */
+
+.item-gmail {
+  padding-bottom: 4px;
+}
+
+/* MIDDLE SECTION STARTS HERE */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 143px;
+}
+
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  width: 584px;
+  height: 44px;
+  margin-top: 24px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  margin-left: 12px;
+  padding: 5px 8px 0 16px;
+  box-sizing: border-box;
+}
+
+.search-bar-container:hover {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.search-bar {
+  display: flex;
+  border: none;
+  color: rgba(0, 0, 0, 0.87);
+  outline: none;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  height: 34px;
+  width: 520px;
+}
+
+.mic-container {
+  height: 24px;
+  width: 24px;
+  flex: 1 0 auto;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  outline: none;
+  padding: 5px 8px;
+}
+
+.mic-container img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Search Buttons */
+
+.search-button-container {
+  width: 571px;
+  height: 58px;
+  padding-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-button {
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 14px 6px;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.search-button-google {
+  line-height: 36px;
+  margin-left: 5px;
+}
+
+.search-button-lucky {
+  line-height: 27px;
+}
+
+/* Footer */
+
+.footer {
+  font-size: 10pt;
+  height: 40px;
+  position: absolute;
+  width: 100%;
+  background: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.footer-nav {
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  display: inline-block;
+  line-height: 40px;
+  color: #5f6368;
+}
+
+.advertising-text {
+  padding-left: 30px;
+}
+
+.business-text {
+  padding-left: 23.7px;
+}
+
+.settings-text {
+  padding-right: 30px;
+}
+
+.terms-text {
+  padding-right: 23.6px;
+}
+
+.privacy-text {
+  padding-right: 23.8px;
+}
